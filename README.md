@@ -217,13 +217,11 @@ YOLOv8 fine-tuned on SKU-110K (5 epochs, val set):
 
 RAG retrieval + generation, tested against 10 sample questions (see `notebooks/rag_pipeline.ipynb`, section 2.6, and `evaluation_results.csv`): retrieval correctly matched the relevant policy document for all 10 test questions. Generation with `qwen2.5:0.5b` produced grounded, source-cited answers; observed failure mode was verbose/templated phrasing rather than hallucination — see the notebook's "Failure cases observed" section for details.
 
-## Screenshots
+## Demo Video
 
-> Add screenshots of the running app here before submitting — e.g. the Streamlit chat interface with a text-only query, and one with an image upload showing the detection result.
+A recorded walkthrough of the full pipeline (text-only query and an image + text query showing the YOLO detection combined with a grounded RAG answer):
 
-`[Screenshot: text-only query and grounded answer]`
-
-`[Screenshot: image upload with YOLO detection + combined answer]`
+[Demo](https://drive.google.com/file/d/1Sul4wnFChnGOAzd8-Wmz-UIS8MlQClra/view?usp=sharing)
 
 ## Notes
 
