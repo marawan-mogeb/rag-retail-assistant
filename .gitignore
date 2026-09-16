@@ -1,0 +1,38 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Env files (never commit secrets/config)
+.env
+!.env.example
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data corpus (see README "Data" section for how to obtain)
+# Note: the vector store itself is small (~44KB) and IS committed, per the
+# project guide's "small artifacts under 50MB may be committed" rule.
+data/raw/
+
+# YOLO training runs (large; keep only best.pt if under 50MB)
+backend/runs/
+runs/
+*.pt.tmp
+
+# IDE
+.vscode/
+.idea/
